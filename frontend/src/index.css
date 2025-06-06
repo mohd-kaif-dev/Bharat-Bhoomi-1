@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: "Noto Sans";
   src: url("NotoSans-Bold.woff2") format("woff2"),
     url("NotoSans-Bold.woff") format("woff");
@@ -93,10 +93,10 @@
 }
 
 @font-face {
-  font-family: "Bricolage Grotesque";
+  font-family: "Bricolage Grotesque 24pt Condensed";
   src: url("BricolageGrotesque24ptCondensed-ExtraBold.woff2") format("woff2"),
     url("BricolageGrotesque24ptCondensed-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-}
+} */

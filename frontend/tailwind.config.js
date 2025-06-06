@@ -34,13 +34,13 @@ export default {
         // 'app-text': '#222',   // Default (light)
         // 'app-accent': '#333', // Default (light)
       },
-      fontFamily: {
-        sans: ['"Noto Sans"', 'sans-serif'], // For Latin text, making Noto Sans the default
-        devanagari: ['"Noto Serif Devanagari"', 'sans-serif'],
-        brico: ['"Bricolage Grotesque"', 'sans-serif'] // A custom utility for Devanagari
-        // You can also specify an array for Noto Sans:
-        // sans: ['Noto Sans', 'ui-sans-serif', 'system-ui', ...defaultTheme.fontFamily.sans],
-      },
+      // fontFamily: {
+      //   sans: ['"Noto Sans"', 'sans-serif'], // For Latin text, making Noto Sans the default
+      //   devanagari: ['"Noto Serif Devanagari"', 'sans-serif'],
+      //   brico: ['"Bricolage Grotesque 24pt Condensed"', 'sans-serif'] // A custom utility for Devanagari
+      //   // You can also specify an array for Noto Sans:
+      //   // sans: ['Noto Sans', 'ui-sans-serif', 'system-ui', ...defaultTheme.fontFamily.sans],
+      // },
     },
   },
 

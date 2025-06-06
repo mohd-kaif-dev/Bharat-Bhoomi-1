@@ -266,7 +266,7 @@ const Article5E = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-primary-bg dark:bg-secondary-bg text-primary-text dark:text-secondary-text font-sans p-2 lg:p-4 transition-colors duration-300 w-full">
+    <div className="min-h-screen bg-primary-bg dark:bg-secondary-bg text-primary-text dark:text-secondary-text font-inter p-2 lg:p-4 transition-colors duration-300 w-full">
       {/* Main content area: Article + Sidebar */}
       <div className="w-full flex flex-col md:flex-row gap-2 lg:gap-8 ">
         {/* Left Section: Main Article Content (3/4 width on medium screens and up) */}

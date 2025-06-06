@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav
       className={`
         shadow-lg p-4 sticky top-0 z-50 rounded-b-lg transition-colors duration-300
-        bg-primary-bg dark:bg-secondary-bg font-sans
+        bg-primary-bg dark:bg-secondary-bg
       `}
     >
       <div className="container mx-auto flex justify-between items-center px-4 py-2">
@@ -21,10 +21,10 @@ const Navbar = () => {
           <div
             className={`
             lg:text-3xl md:text-xl sm:text-3xl font-extrabold transition-colors duration-300
-            text-primary-accent dark:text-secondary-text flex flex-row md:flex-col font-brico
+            text-primary-accent dark:text-secondary-text flex flex-row md:flex-col gap-2 md:gap-0
           `}
           >
-            <span className="font-brico">BHARAT </span>{" "}
+            <span>BHARAT </span>{" "}
             <span
               className={`
               transition-colors duration-300
@@ -116,7 +116,7 @@ const Navbar = () => {
             >
               {/* Top bar */}
               <span
-                className={`block w-6 h-0.5 bg-current transition-all duration-300 ease-in-out absolute
+                className={`block w-6 h-0.5  transition-all duration-300 ease-in-out absolute
                             ${
                               isMobileMenuOpen ? "rotate-45" : "-translate-y-2"
                             } // Rotates to form cross / moves up for hamburger
@@ -129,7 +129,7 @@ const Navbar = () => {
               ></span>
               {/* Middle bar */}
               <span
-                className={`block w-6 h-0.5 bg-current transition-all duration-300 ease-in-out absolute
+                className={`block w-6 h-0.5  transition-all duration-300 ease-in-out absolute
                           ${
                             isMobileMenuOpen ? "opacity-0" : "opacity-100"
                           } // Fades out for cross / visible for hamburger
@@ -142,7 +142,7 @@ const Navbar = () => {
               ></span>
               {/* Bottom bar */}
               <span
-                className={`block w-6 h-0.5 bg-current transition-all duration-300 ease-in-out absolute
+                className={`block w-6 h-0.5  transition-all duration-300 ease-in-out absolute
                             ${
                               isMobileMenuOpen ? "-rotate-45" : "translate-y-2"
                             } // Rotates to form cross / moves down for hamburger
