@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bharat Bhoomi is a News Portal" />
+    <title>Bharat Bhoomi | People's Voice</title>
+
+    <script>
+      (function () {
+        // Check if theme is explicitly set to dark in localStorage
+        const storedTheme = localStorage.getItem("theme");
+        if (storedTheme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else if (storedTheme === "light") {
+          document.documentElement.classList.remove("dark");
+        } else {
+          // If no theme is set, check system preference (optional, but good for first-time users)
+          if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark"); // Save system preference for consistency
+          } else {
+            localStorage.setItem("theme", "light"); // Save system preference for consistency
+          }
+        }
+      })();
+    </script>
+    <!-- Preload Noto Sans Fonts -->
+    <link
+      rel="preload"
+      href="/fonts/NotoSans-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/NotoSans-Bold.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/NotoSans-ExtraBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/NotoSans-ExtraBold.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/NotoSans-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/NotoSans-Medium.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/NotoSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/NotoSans-Regular.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/NotoSans-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/NotoSans-SemiBold.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <!-- Preload Noto Serif Devanagari Fonts -->
+    <link
+      rel="preload"
+      href="/fonts/NotoSerifDevanagari-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/NotoSerifDevanagari-Bold.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/NotoSerifDevanagari-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/NotoSerifDevanagari-Medium.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/NotoSerifDevanagari-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/NotoSerifDevanagari-Regular.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/NotoSerifDevanagari-ExtraBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/NotoSerifDevanagari-ExtraBold.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/NotoSerifDevanagari-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/NotoSerifDevanagari-SemiBold.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
