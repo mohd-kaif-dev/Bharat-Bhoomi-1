@@ -222,8 +222,8 @@ const Navbar = () => {
 
         <ul className="flex flex-col space-y-6" onClick={toggleMobileMenu}>
           <li>
-            <a
-              href="/v1"
+            <Link
+              to="v1"
               className={`
                 transition duration-300 text-lg font-semibold
                 text-primary-text dark:text-secondary-text
@@ -232,7 +232,7 @@ const Navbar = () => {
               `}
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a
