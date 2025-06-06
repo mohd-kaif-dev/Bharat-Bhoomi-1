@@ -23,6 +23,7 @@ const App = () => {
         {/* Main content area, rendered by the Home component */}
         <main className="flex-grow">
           <Routes>
+            <Route path="/" element={<Navigate to="/v1" replace />} />
             <Route path="v1" element={<Home />} />
             <Route path="v1/news" element={<ArticleDetails />} />
             <Route path="v1/article2E" element={<Article2 />} />
