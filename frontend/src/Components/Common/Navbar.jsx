@@ -9,6 +9,22 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleLinkClick = (e, href, offset) => {
+    e.preventDefault();
+    console.log("href", href);
+
+    const targetElement = document.querySelector(href);
+    if (targetElement) {
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY + offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <nav
       className={`
@@ -37,24 +53,25 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation Links - Hidden on small screens */}
-        <ul className="hidden md:flex space-x-8">
+        <ul className="hidden md:flex space-x-4 md:space-x-2 lg:space-x-8">
           <li>
-            <a
-              href="/v1"
+            <Link
+              to={"v1"}
               className={`
-                transition duration-300 text-lg md:text-sm lg:text-lg font-semibold
+                transition duration-300 text-lg md:text-xs lg:text-lg font-semibold
                 text-primary-text dark:text-secondary-text
                 hover:text-accent-color
               `}
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a
-              href="/uttar-pradesh"
+              href="#uttar-pradesh"
+              onClick={(e) => handleLinkClick(e, "#uttar-pradesh", -200)}
               className={`
-                transition duration-300 text-lg md:text-sm lg:text-lg font-semibold
+                transition duration-300 text-lg md:text-xs lg:text-lg font-semibold
                 text-primary-text dark:text-secondary-text
                  hover:text-accent-color
               `}
@@ -65,9 +82,22 @@ const Navbar = () => {
 
           <li>
             <a
+              href="#hindi"
+              onClick={(e) => handleLinkClick(e, "#hindi", -300)}
+              className={`
+                transition duration-300 text-lg md:text-xs lg:text-lg font-semibold
+                text-primary-text dark:text-secondary-text
+                 hover:text-accent-color
+              `}
+            >
+              Hindi News
+            </a>
+          </li>
+          <li>
+            <a
               href="#"
               className={`
-                transition duration-300 text-lg md:text-sm lg:text-lg font-semibold
+                transition duration-300 text-lg md:text-xs lg:text-lg font-semibold
                 text-primary-text dark:text-secondary-text
                  hover:text-accent-color
               `}
@@ -79,7 +109,7 @@ const Navbar = () => {
             <a
               href="#"
               className={`
-                transition duration-300 text-lg md:text-sm lg:text-lg font-semibold
+                transition duration-300 text-lg md:text-xs lg:text-lg font-semibold
                 text-primary-text dark:text-secondary-text
                  hover:text-accent-color
               `}
@@ -91,7 +121,7 @@ const Navbar = () => {
             <a
               href="#"
               className={`
-                transition duration-300 text-lg md:text-sm lg:text-lg font-semibold
+                transition duration-300 text-lg md:text-xs lg:text-lg font-semibold
                 text-primary-text dark:text-secondary-text
                  hover:text-accent-color
               `}
@@ -200,7 +230,8 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="/uttar-pradesh"
+              href="#uttar-pradesh"
+              onClick={(e) => handleLinkClick(e, "#uttar-pradesh", -80)}
               className={`
                 transition duration-300 text-lg font-semibold
                 text-primary-text dark:text-secondary-text
@@ -208,6 +239,19 @@ const Navbar = () => {
               `}
             >
               Uttar Pradesh
+            </a>
+          </li>
+          <li>
+            <a
+              href="#hindi"
+              onClick={(e) => handleLinkClick(e, "#hindi", -150)}
+              className={`
+                transition duration-300 text-lg md:text-sm lg:text-lg font-semibold
+                text-primary-text dark:text-secondary-text
+                 hover:text-accent-color
+              `}
+            >
+              Hindi News
             </a>
           </li>
           <li>
