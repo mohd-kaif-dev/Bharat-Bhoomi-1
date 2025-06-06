@@ -365,7 +365,7 @@ const Home = () => {
           </div>
 
           {/* Uttar Pradesh Section */}
-          <div className="mb-12">
+          <div id="uttar-pradesh" className="mb-12">
             <h2
               className={`
                 text-3xl font-bold mb-6 pb-2 border-b-2
@@ -441,7 +441,10 @@ const Home = () => {
             >
               Hindi News
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              id="hindi"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            >
               {hindiArticles.map((article) => (
                 <Link to={article.articleLink} key={article.id}>
                   <div

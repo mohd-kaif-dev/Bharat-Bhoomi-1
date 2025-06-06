@@ -32,11 +32,11 @@ const Navbar = () => {
         bg-primary-bg dark:bg-secondary-bg
       `}
     >
-      <div className="container mx-auto flex justify-between items-center px-4 py-2">
+      <div className="flex justify-between items-center px-4 py-2">
         <Link to="v1">
           <div
             className={`
-            lg:text-3xl md:text-xl sm:text-3xl font-extrabold transition-colors duration-300
+            lg:text-xl md:text-xl sm:text-3xl font-extrabold transition-colors duration-300
             text-primary-accent dark:text-secondary-text flex flex-row md:flex-col gap-2 md:gap-0
           `}
           >
@@ -53,17 +53,18 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation Links - Hidden on small screens */}
-        <ul className="hidden md:flex space-x-4 md:space-x-2 lg:space-x-8">
+        <ul className="hidden md:flex space-x-4 md:space-x-2 lg:space-x-8 px-4">
           <li>
             <Link
               to={"v1"}
               className={`
                 transition duration-300 text-lg md:text-xs lg:text-lg font-semibold
                 text-primary-text dark:text-secondary-text
-                hover:text-accent-color
+                hover:text-accent-color relative group
               `}
             >
               Home
+              <span className="absolute w-0 h-0.5 bg-accent-color left-0 bottom-0 group-hover:w-full transition-all duration-300" />
             </Link>
           </li>
           <li>
@@ -73,10 +74,11 @@ const Navbar = () => {
               className={`
                 transition duration-300 text-lg md:text-xs lg:text-lg font-semibold
                 text-primary-text dark:text-secondary-text
-                 hover:text-accent-color
+                 hover:text-accent-color relative group
               `}
             >
               Uttar Pradesh
+              <span className="absolute w-0 h-0.5 bg-accent-color left-0 bottom-0 group-hover:w-full transition-all duration-300" />
             </a>
           </li>
 
@@ -87,10 +89,11 @@ const Navbar = () => {
               className={`
                 transition duration-300 text-lg md:text-xs lg:text-lg font-semibold
                 text-primary-text dark:text-secondary-text
-                 hover:text-accent-color
+                 hover:text-accent-color relative group
               `}
             >
               Hindi News
+              <span className="absolute w-0 h-0.5 bg-accent-color left-0 bottom-0 group-hover:w-full transition-all duration-300" />
             </a>
           </li>
           <li>
@@ -99,10 +102,11 @@ const Navbar = () => {
               className={`
                 transition duration-300 text-lg md:text-xs lg:text-lg font-semibold
                 text-primary-text dark:text-secondary-text
-                 hover:text-accent-color
+                 hover:text-accent-color relative group
               `}
             >
               Business
+              <span className="absolute w-0 h-0.5 bg-accent-color left-0 bottom-0 group-hover:w-full transition-all duration-300" />
             </a>
           </li>
           <li>
@@ -111,10 +115,11 @@ const Navbar = () => {
               className={`
                 transition duration-300 text-lg md:text-xs lg:text-lg font-semibold
                 text-primary-text dark:text-secondary-text
-                 hover:text-accent-color
+                 hover:text-accent-color relative group
               `}
             >
               Technology
+              <span className="absolute w-0 h-0.5 bg-accent-color left-0 bottom-0 group-hover:w-full transition-all duration-300" />
             </a>
           </li>
           <li>
@@ -123,10 +128,11 @@ const Navbar = () => {
               className={`
                 transition duration-300 text-lg md:text-xs lg:text-lg font-semibold
                 text-primary-text dark:text-secondary-text
-                 hover:text-accent-color
+                 hover:text-accent-color relative group
               `}
             >
               Science
+              <span className="absolute w-0 h-0.5 bg-accent-color left-0 bottom-0 group-hover:w-full transition-all duration-300" />
             </a>
           </li>
         </ul>
