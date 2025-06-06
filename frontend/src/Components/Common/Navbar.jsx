@@ -56,7 +56,7 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-4 md:space-x-2 lg:space-x-8 px-4">
           <li>
             <Link
-              to={"v1"}
+              to="v1"
               className={`
                 transition duration-300 text-lg md:text-xs lg:text-lg font-semibold
                 text-primary-text dark:text-secondary-text
